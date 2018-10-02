@@ -1,0 +1,330 @@
+@charset "UTF-8";
+body {
+    font-size: 12px;
+    color: #454545;
+    background: #000;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    scrollbar-face-color: #eaeaea;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-shadow-color: #999999;
+    scrollbar-3dlight-color: #999999;
+    scrollbar-arrow-color: #999999;
+    scrollbar-darkshadow-color: #ffffff;
+}
+
+html,
+body {
+    overflow: hidden
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-button:vertical {
+    display: none;
+}
+
+::-webkit-scrollbar-track:vertical {
+    background-color: black;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #F0F0F0;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #8E8E8E;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: #3B3B3B;
+}
+
+::-webkit-scrollbar-corner:vertical {
+    background-color: #535353;
+}
+
+::-webkit-scrollbar-resizer:vertical {
+    background-color: #FF6E00;
+}
+
+.main {
+    min-height: 340px;
+    min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+/*动画*/
+
+@-webkit-keyframes entrance {
+    0% {
+        top: 10%;
+        opacity: 0.1;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes entrance {
+    0% {
+        top: 10%;
+        opacity: 0.1;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+/*每列*/
+
+.list_1 {
+    overflow: hidden;
+}
+
+/*颜色*/
+
+.ico,
+.ico1 {
+    top: 50%;
+    position: relative;
+    margin-top: -140px;
+    left: 50%;
+    margin-left: -110px;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.front .ico {
+    background: url(https://www.w3cplus.com/sites/default/files/blogs/2015/1508/Ico_01.png) no-repeat 0 0;
+}
+
+.back .ico {
+    background: url(https://www.w3cplus.com/sites/default/files/blogs/2015/1508/Ico_02.png) no-repeat 0 0;
+}
+
+.text {
+    top: 50%;
+    position: relative;
+    clear: both;
+    margin-top: -40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden;
+    width: 100%;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.an {
+    top: 50%;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    background: #40c666;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color .2s linear, background-color 0.2s linear;
+}
+
+.an:hover {
+    text-decoration: underline;
+    background: #000;
+    text-decoration: none;
+    transition: color .2s linear, background-color 0.2s linear;
+}
+
+/*动画*/
+
+.rotateBox {
+    overflow: hidden;
+    height: 500px;
+    float: left;
+    position: relative;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+
+.rotateBox:nth-child(1) .front {
+    background: #358fc9;
+}
+
+.rotateBox:nth-child(1) .front .ico {
+    background-position: 0px 0;
+}
+
+.rotateBox:nth-child(2) .front {
+    background: #40c666;
+}
+
+.rotateBox:nth-child(2) .front .ico {
+    background-position: -240px 0;
+}
+
+.rotateBox:nth-child(3) .front {
+    background: #dec345;
+}
+
+.rotateBox:nth-child(3) .front .ico {
+    background-position: -480px 0;
+}
+
+.rotateBox:nth-child(4) .front {
+    background: #ee9833;
+}
+
+.rotateBox:nth-child(4) .front .ico {
+    background-position: -720px 0;
+}
+
+.rotateBox:nth-child(5) .front {
+    background: #db593b;
+}
+
+.rotateBox:nth-child(5) .front .ico {
+    background-position: -960px 0;
+}
+
+.rotateBox:nth-child(6) .front {
+    background: #c04067;
+}
+
+.rotateBox:nth-child(6) .front .ico {
+    background-position: -1200px 0;
+}
+
+.rotateBox:nth-child(7) .front {
+    background: #a569d7;
+}
+
+.rotateBox:nth-child(7) .front .ico {
+    background-position: -1440px 0;
+}
+
+.rotateBox:nth-child(8) .front {
+    background: #6156c3;
+}
+
+.rotateBox:nth-child(8) .front .ico {
+    background-position: -1680px 0;
+}
+
+.rotateBox:nth-child(1) .back {
+    background: #2271b6;
+}
+
+.rotateBox:nth-child(1) .back .ico {
+    background-position: 0px 0;
+}
+
+.rotateBox:nth-child(2) .back {
+    background: #2ab248;
+}
+
+.rotateBox:nth-child(2) .back .ico {
+    background-position: -240px 0;
+}
+
+.rotateBox:nth-child(3) .back {
+    background: #d2ae2e;
+}
+
+.rotateBox:nth-child(3) .back .ico {
+    background-position: -480px 0;
+}
+
+.rotateBox:nth-child(4) .back {
+    background: #e87a21;
+}
+
+.rotateBox:nth-child(4) .back .ico {
+    background-position: -720px 0;
+}
+
+.rotateBox:nth-child(5) .back {
+    background: #ce3d26;
+}
+
+.rotateBox:nth-child(5) .back .ico {
+    background-position: -960px 0;
+}
+
+.rotateBox:nth-child(6) .back {
+    background: #aa2a49;
+}
+
+.rotateBox:nth-child(6) .back .ico {
+    background-position: -1200px 0;
+}
+
+.rotateBox:nth-child(7) .back {
+    background: #894ac8;
+}
+
+.rotateBox:nth-child(7) .back .ico {
+    background-position: -1440px 0;
+}
+
+.rotateBox:nth-child(8) .back {
+    background: #443bae;
+}
+
+.rotateBox:nth-child(8) .back .ico {
+    background-position: -1680px 0;
+}
+
+.rotateBox:hover .transBox {
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+
+.transBox {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.transBox .list_1 {
+    position: absolute;
+    height: 500px;
+}
+
+.transBox .front {
+    left: 0;
+    top: 0;
+}
+
+.transBox .back {
+    left: 200px;
+    top: 0;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    position: absolute;
+}
